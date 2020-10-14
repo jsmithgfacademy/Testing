@@ -1,33 +1,33 @@
 
 /**
- * Write a description of class Cat here.
+ * class Cat represents a 
+ * pet cat object and stores
+ * some information about the cat.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author J. Smith
+ * @version October 2020
  */
 public class Cat
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private String name;
+    private int age;
 
     /**
-     * Constructor for objects of class Cat
+     * Construct a cat with the given name and age
      */
-    public Cat()
+    public Cat(String petName, int age)
     {
-        // initialise instance variables
-        x = 0;
+        this.name = petName;
+        this.age = age;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public void meow ()
     {
-        // put your code here
-        return x + y;
+        System.out.println("meow");
+    }
+    
+    public String getName ()
+    {
+        return name;
     }
 }
