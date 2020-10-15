@@ -20,5 +20,14 @@ public class CatTalk
 {
     public static void main (String [] args)
     {
+        Cat winter = new Cat ("Winter", 7);
+        Cat tilly = new Cat ("Tilly", 10);
+        String wname = winter.getName();
+        System.out.print(wname + " says");
+        winter.meow();
+        String tname = tilly.getName();
+        System.out.print(tname + " says");
+        tilly.meow();
+        tilly.meow();
     }
 }
